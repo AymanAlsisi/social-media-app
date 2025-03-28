@@ -29,8 +29,8 @@ This is the **web frontend** of a full-stack social media platform, built using 
 ## ⚙️ Installation & Setup
 ### **1. Clone the Repository**
 ```sh
-git clone https://github.com/AymanAlsisi/social-media-web.git
-cd social-media-mobile
+git clone https://github.com/your-username/social-media-web.git
+cd social-media-web
 ```
 
 ### **2. Install Dependencies**
@@ -40,7 +40,7 @@ npm install
 
 ### **3. Run the App**
 ```sh
-expo start
+npm start
 ```
 
 ---
