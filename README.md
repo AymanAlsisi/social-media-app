@@ -44,4 +44,4 @@ This project is open-source. Feel free to explore and contribute!
 ## 📩 Contact
 For inquiries, reach out via:
 - **Email:** aimandabora167@gmail.com
-- **GitHub:** [[your-github-profile]](https://github.com/AymanAlsisi)
+- **GitHub:** [[My GitHub Profile]](https://github.com/AymanAlsisi)
