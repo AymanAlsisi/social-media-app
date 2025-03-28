@@ -1,0 +1,184 @@
+.messages-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr 7fr;
+    height: 100vh;
+}
+
+.navbar {
+    display: none;
+}
+
+.leftsidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-right: 1px solid var(--secondary);
+    position: relative;
+    /* background-color: var(--secondary); */
+}
+
+.messages-layout .leftsidebar {
+    align-items: center;
+}
+
+.leftsidebar .brand {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.leftsidebar .header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+}
+
+.leftsidebar .header img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.leftsidebar .header .username {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.leftsidebar .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh;
+    justify-content: center;
+}
+
+.leftsidebar .links a {
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    gap: 16px;
+    color: #FFF;
+    border-radius: 4px;
+    font-size: 16px;
+    width: max-content;
+}
+
+.leftsidebar .links a ion-icon {
+    font-size: 20px;
+}
+
+.leftsidebar .links a.active {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.leftsidebar .links a:hover {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.leftsidebar button {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.messages-layout .leftsidebar button {
+    left: 40%;
+}
+
+.no-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    border-bottom: 1px solid var(--secondary);
+    /* background-color: var(--secondary); */
+    padding: 10px 0;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #FFF;
+    padding: 5px 3px;
+    gap: 4px;
+    border-radius: 5px;
+}
+
+.navbar a ion-icon {
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.navbar a.active {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.rightsidebar {
+    background-color: var(--secondary);
+}
+
+.outer-spiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-spiner .inner-spiner {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: var(--info) var(--info) var(--info) transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    .messages-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .messages-outlet {
+        overflow-y: unset;
+        height: unset;
+    }
+
+    .topbar,
+    .navbar {
+        display: flex;
+    }
+
+    .leftsidebar,
+    .rightsidebar {
+        display: none;
+    }
+}

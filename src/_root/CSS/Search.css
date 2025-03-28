@@ -1,0 +1,125 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 3% 5%;
+}
+
+.search .search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+
+.search .search-input input {
+    width: 95%;
+}
+
+.search .unsearched {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.search .search-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.search .search-result .list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.search .search-result .list a {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    gap: 10px;
+    color: #FFF;
+}
+
+.search .search-result .list a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px;
+    object-fit: contain;
+    border: 1px solid var(--secondary);
+}
+
+.search .search-result .list a:hover {
+    background-color: var(--secondary);
+}
+
+.search .not-found {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+}
+
+.search .not-found p:nth-child(3) {
+    padding: 0 5%;
+    align-self: flex-start;
+    font-weight: 700;
+}
+
+.search .search-history {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.search .search-history .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 10px;
+}
+
+.search .search-history .top p {
+    font-size: 17px;
+    font-weight: 700;
+}
+.search .search-history .top button {
+    background-color: transparent;
+    font-size: 17px;
+    color: var(--info);
+    font-weight: 700;
+}
+
+.search .search-history .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.search .search-history .user a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search .search-history .user a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid var(--secondary);
+    object-fit: contain;
+}

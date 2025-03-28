@@ -1,0 +1,99 @@
+.update-profile {
+    padding: 3% 5%;
+}
+
+.update-profile .form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.update-profile .form .img-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.update-profile .form .img-block button {
+    background-color: transparent;
+    color: var(--info);
+    font-size: 15px;
+}
+
+.update-profile .form .img-block .user-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1.5px solid var(--secondary);
+}
+
+.update-profile .form .input-block {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.update-profile .form .input-block label {
+    font-size: 13px;
+}
+
+.update-profile .form .input-block textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    padding: 5px 10px;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+
+.update-profile .form .input-block input[type="text"] {
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: var(--secondary);
+    width: 100%;
+}
+
+.update-profile .form button[type="submit"] {
+    width: 90%;
+    padding: 3px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: var(--info);
+    color: var(--secondary);
+    border-radius: 4px;
+}
+
+.edit-img {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.edit-img .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit-img .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.edit-img .buttons button {
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+}

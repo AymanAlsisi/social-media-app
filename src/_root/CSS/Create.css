@@ -1,0 +1,83 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+}
+
+.create .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.create .form textarea {
+    resize: none;
+    height: 160px;
+    background-color: var(--secondary);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.create .form .img-input {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.create .form .img-input ion-icon {
+    font-size: 25px;
+}
+
+.create .form .img-input p {
+    font-size: 18px;
+}
+
+.create .form .img-input button {
+    padding: 5px 10px;
+    background-color: var(--grey_secondary);
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.create .form .img-input label:hover {
+    color: #FFF;
+}
+
+.create .form .submit-btn {
+    font-size: 17px;
+    font-weight: 700;
+    background-color: var(--info);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--secondary);
+}
+
+.create .form .submit-btn:hover {
+    opacity: 0.7;
+}
+
+.create .form .img-chosen {
+    width: 97%;
+    align-self: center;
+    height: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.create .form .img-chosen img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 5px;
+}

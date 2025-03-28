@@ -1,0 +1,178 @@
+.empty-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 3px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+}
+
+.messages .search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+
+.messages .search-input input {
+    width: 95%;
+}
+
+.messages .rooms-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.messages .rooms-list label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.messages .rooms-list label:hover {
+    background-color: var(--secondary);
+}
+
+.messages .rooms-list label .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.messages .rooms-list label .left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 2px;
+    border: 1px solid var(--secondary);
+}
+
+.messages .rooms-list label .left .text .message {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.messages .rooms-list label .left .text .username {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.messages .rooms-list label .time {
+    font-size: 10px;
+    color: var(--grey);
+}
+
+.rooms-loading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rooms-loading .room-loading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+.rooms-loading .room-loading .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+}
+
+.rooms-loading .room-loading .text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 80%;
+}
+
+.rooms-loading .room-loading .text .username {
+    width: 60%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+}
+
+.rooms-loading .room-loading .text .message {
+    width: 30%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+}
+
+@keyframes color {
+    to {
+        background-color: var(--grey);
+    }
+}
+
+.messages .searched-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.messages .searched-list .user {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.messages .searched-list .user:hover {
+    background-color: var(--secondary);
+}
+
+.messages .searched-list .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 2px;
+    border: 1px solid var(--secondary);
+}
+
+.messages .searched-list .user .username {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .messages {
+        padding: 3% 4%;
+    }
+
+    .messages .rooms-list {
+        overflow-y: unset;
+        height: unset;
+    }
+}

@@ -1,0 +1,58 @@
+:root {
+    --primary: #111;
+    --secondary: #161622;
+    --grey: #60606b;
+    --danger: #dc002c;
+    --info: #0088ff;
+    --success: #0bb90b;
+    --grey_secondary: #212131;
+    --rsbs-bg: #212131;
+    --rsbs-handle-bg: #fff;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #FFF;
+    background-color: var(--primary);
+}
+
+a,
+button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--info);
+    border-radius: 4px;
+}

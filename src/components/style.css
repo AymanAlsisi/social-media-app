@@ -1,0 +1,26 @@
+.icon-btn {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.outer-spiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-spiner .inner-spiner {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: var(--info) var(--info) var(--info) transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

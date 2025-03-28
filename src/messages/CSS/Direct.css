@@ -1,0 +1,291 @@
+.direct {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.direct .direct-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 12px;
+    border-bottom: 1px solid var(--grey_secondary);
+}
+
+.direct .direct-top img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    padding: 2px;
+    object-fit: contain;
+}
+
+.direct .direct-top .username {
+    color: #FFF;
+    font-size: 15px;
+}
+
+.direct .direct-body {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    height: 78vh;
+    padding: 4px 8px;
+    gap: 6px;
+}
+
+.direct .direct-body .my-message,
+.direct .direct-body .my-img-message,
+.direct .direct-body .my-post-message {
+    align-self: end;
+    background-color: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
+
+.direct .direct-body .user-message,
+.direct .direct-body .user-img-message,
+.direct .direct-body .user-post-message {
+    align-self: start;
+    background-color: var(--info);
+    transition: all 0.3s ease-in-out;
+}
+
+.direct .direct-body .text-message {
+    padding: 4px 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+}
+
+.direct .direct-body .text-message .content {
+    font-size: 13px;
+}
+
+.direct .direct-body .img-message,
+.direct .direct-body .post-message {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.direct .direct-body .img-message img {
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.direct .direct-body .img-message .caption {
+    font-size: 12px;
+}
+
+.direct .direct-body .post-message img {
+    width: 100%;
+    height: 80px;
+    opacity: 0.4;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.direct .direct-body .post-message p {
+    font-size: 12px;
+}
+
+.direct .direct-body .post-message .caption {
+    font-size: 13px;
+}
+
+.direct .direct-body .time {
+    font-size: 11px;
+    opacity: 0.6;
+    align-self: flex-end;
+}
+
+.direct .direct-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    padding: 5px 8px;
+    border: 1px solid var(--grey);
+    border-radius: 17px;
+    margin: 0 10px;
+}
+
+.direct .direct-bottom input {
+    width: 90%;
+}
+
+.direct .direct-bottom .buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.direct .direct-bottom .buttons button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.loading-chat {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    height: 63vh;
+    padding: 10px;
+}
+
+.loading-chat .short-message-r {
+    width: 10%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+    align-self: flex-end;
+}
+
+.loading-chat .short-message-l {
+    width: 10%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+}
+
+.loading-chat .long-message-l {
+    width: 45%;
+    height: 70px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+    align-self: flex-start;
+}
+
+.loading-chat .long-message-r {
+    width: 45%;
+    height: 70px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: color 1s linear infinite;
+    align-self: flex-end;
+}
+
+.image-selector {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+}
+
+.image-selector .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-selector .img-input {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.image-selector .img-input ion-icon {
+    font-size: 25px;
+}
+
+.image-selector .img-input p {
+    font-size: 18px;
+}
+
+.image-selector .img-input button {
+    padding: 5px 10px;
+    background-color: var(--grey_secondary);
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.image-selector .img-input label:hover {
+    color: #FFF;
+}
+
+.image-selector .img-chosen {
+    width: 97%;
+    align-self: center;
+    height: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.image-selector .img-chosen img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-selector .img-chosen .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10px;
+}
+
+.image-selector .img-chosen .form button {
+    display: flex;
+    background-color: transparent;
+}
+
+.direct .direct-body .sending-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 30%;
+    padding: 4px;
+    background-color: var(--grey);
+    border-radius: 5px;
+}
+
+.direct .direct-body .sending-img .spiner {
+    height: 22px;
+    width: 22px;
+    border: 4px solid;
+    border-color: var(--grey) white white white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes color {
+    to {
+        background-color: var(--grey);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    .direct .direct-body {
+        height: 65vh;
+    }
+}

@@ -1,0 +1,337 @@
+.root-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.root-outlet {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.topbar,
+.navbar {
+    display: none;
+}
+
+.leftsidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-right: 1px solid var(--secondary);
+    position: relative;
+}
+
+.leftsidebar .brand {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.leftsidebar .header {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.leftsidebar .header img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.leftsidebar .header .username {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.leftsidebar .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh;
+    justify-content: center;
+}
+
+.leftsidebar .links a {
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    gap: 16px;
+    color: #FFF;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.leftsidebar .links a.active {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.leftsidebar .links a:hover {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.leftsidebar button {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.topbar {
+    align-items: center;
+    height: 8vh;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.topbar .brand {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.topbar .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar .user img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.topbar .user button {
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+    display: flex;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    border-bottom: 1px solid var(--secondary);
+    padding: 10px 0;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #FFF;
+    padding: 5px 3px;
+    gap: 4px;
+    border-radius: 5px;
+}
+
+.navbar a ion-icon {
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.navbar a.active {
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.rightsidebar {
+    background-color: var(--secondary);
+}
+
+.share-post {
+    height: 70vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.share-post .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.share-post .search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 6px;
+    margin: 5px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.share-post .search-input input {
+    width: 95%;
+}
+
+.share-post .users {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: scroll;
+    height: 70vh;
+    padding: 5px 10px;
+}
+
+.share-post .users .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.share-post .users .user .left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.share-post .users .user .left img {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.share-post .users .user .left .username {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.share-post .users .user button {
+    padding: 3px 5px;
+    background-color: var(--info);
+    color: var(--secondary);
+    border-radius: 5px;
+}
+
+.no-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.no-posts div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.no-posts button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: var(--info);
+    color: var(--secondary);
+}
+
+.log-out {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.log-out .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.log-out .buttons button {
+    width: 46%;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.log-out .buttons button:first-child {
+    background-color: var(--info);
+}
+
+.log-out .buttons button:last-child {
+    background-color: var(--grey);
+}
+
+@media (max-width: 700px) {
+    .root-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .root-outlet {
+        overflow-y: unset;
+        height: unset;
+    }
+
+    .topbar,
+    .navbar {
+        display: flex;
+    }
+
+    .leftsidebar,
+    .rightsidebar {
+        display: none;
+    }
+
+    .share-post {
+        top: 5%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    .leftsidebar .links a {
+        width: max-content;
+    }
+
+    .leftsidebar .header .username {
+        display: none;
+    }
+
+    .leftsidebar .links a ion-icon {
+        font-size: 20px;
+    }
+
+    .leftsidebar .links a span {
+        display: none;
+    }
+}
