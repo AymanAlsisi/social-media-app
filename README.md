@@ -26,11 +26,6 @@ This is the **web frontend** of a full-stack social media platform, built using 
 
 ---
 
-## 📸 Screenshots
-*(Add images showcasing the UI here.)*
-
----
-
 ## 🔗 Related Projects
 - **[Social Media Mobile App](https://github.com/AymanAlsisi/social-media-mobile)**
 
